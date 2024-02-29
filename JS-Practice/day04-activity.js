@@ -54,7 +54,6 @@ Write a function called applyFunction that takes a function and array as paramet
 
 function applyFunction(callback, array) {
     // array.forEach(callback(array));
-    // what's breakpoint?
     for(let i=0; i<array.length; i++) {
         array[i] = callback(array[i]);
     }
@@ -74,22 +73,22 @@ console.log(applyFunction(square,([2,2,3,4,5])));
 /* Exercise 5
 Create a function getUserData that simulates fetching user data from a server. It should accept a callback function as parameter. Call the callback function with a user object once the data is retrieved. */
 
-function getUserData() {
-    let userInput = prompt("Please provide callback function");
-    result = isDataReceived(userInput);
-    console.log("Client message: Data received =", result);
+// function getUserData() {
+//     let userInput = prompt("Please provide callback function");
+//     result = isDataReceived(userInput);
+//     console.log("Client message: Data received =", result);
 
-}
+// }
 
-function isDataReceived(userInput) {
-    if (userInput == null || userInput == undefined || userInput == "") {
-        console.log("Server message: data not received");
-        return false
-    }
-    else {
-        console.log("Server message: data is received")
-        return true
-    }
-}
+// function isDataReceived(userInput) {
+//     if (userInput == null || userInput == "") {
+//         console.log("Server message: data not received");
+//         return false
+//     }
+//     else {
+//         console.log("Server message: data is received")
+//         return true
+//     }
+// }
 
-getUserData();
+// getUserData();
