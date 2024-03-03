@@ -1,5 +1,7 @@
 // Prompt the user to enter a time between 1 to 60.
 
+// terminal: npm install prompt-sync
+
 // Import prompt module
 const prompt = require ("prompt-sync")({sigint: true});
 
