@@ -58,7 +58,7 @@ const updatePost = async (req, res) => {
         const post = await Post.findByIdAndUpdate(
             { _id: id },
             { ...req.body },
-            { new: true, runValidators: true }
+            { new: true, runValidators: true } // runValidator will keepthe properties there...
         );
 
         if (!post) return res.status(404).json({error: "No matching post found."});
